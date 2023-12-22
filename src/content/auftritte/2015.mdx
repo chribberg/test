@@ -1,0 +1,47 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2015-01-01
+date: 2015
+uhrzeit: 
+title: Best of 2015
+description: Ein Einblick in das MMT-Jahr 2015
+location: 
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2015_alle_Auftritte/Titelbild/MMT-IMG_6955.jpg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+ Auftritte 2015
+- 05.02. Pfarrfasching Gemeinde Philippus
+13.06. Jazzfrühshoppen Homburg/Saar
+- 15.06. Bürgerfest Weißenseepark
+- 12.10. Private Hochzeit, Botanischer Garten
+- Weihnachtskonzert MMT
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
