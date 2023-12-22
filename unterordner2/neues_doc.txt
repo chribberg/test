@@ -1,0 +1,18 @@
+﻿---
+leitung: FALSE
+saxophone: TRUE
+trompete: FALSE
+posaunen: FALSE
+rhythmus: FALSE
+gesang: FALSE
+freunde: FALSE
+member: Christian Bergler
+instroment: Saxophon
+function: Altsaxophon
+description: Christian spielt seit 2022 in der Band, zuerst Tenorsaxophon, und dann Altsaxophon.
+keywords: MMT, Christian Bergler
+image:
+   src: ../../../public/images/band/christian-bergler.jpg
+   alt: Christian Bergler
+copyright: pic. CV
+---
