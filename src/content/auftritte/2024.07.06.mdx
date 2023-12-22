@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: false
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2024-07-06
+date: 06.07.2024
+uhrzeit: 20:30 Uhr
+title: Jazz Weekend Regensburg
+description: Auftritt auf der Außenbühne im Hof des Schlosses Wenzenbach
+location: Schloss Schönberg, Am Schloß 2, 93173 Wenzenbach
+keywords: Jazzfest Regensburg, Wenzenbach, Regensburg
+link: 
+linktext: 
+image:
+  src: /images/ical.png
+  alt: Jazz Weekend Regensburg
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
