@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2004-01-01
+date: 2004-2008
+uhrzeit: 
+title: Jazz-Projekt-Phase
+description: Mitunter sehr anspuchsvolle Jazz-Arrangements kamen zur Uraufführung
+location: 
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/ical.png
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Die Band hat mitunter hochkarätige Jazz-Musiker in ihren Reihen. Das führt dazu, dass so exponierte Werke wie die "Channel One-Suite" von Buddy Rich aufgeführt werden konnten.
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
