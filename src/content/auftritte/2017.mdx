@@ -1,0 +1,49 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2017-01-01
+date: 2017
+uhrzeit: 
+title: Best of Musicals
+description: Weihnachtskonzert mit Musical Highlights in der Kulturetage Messestadt Riem
+location: Kulturetage Messestadt Riem
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2017_alle_Auftritte/Titelbild/DSC00057.JPG
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Weitere Auftritte und Events in 2017.  24.-26.11. Big Band Workshop mit Harald Rüschenbaum in der Musikakademie Schloss Alteglofsheim
+12.10.       Einweihung Europäisches Patentamt, Neues Gebäude in Haar
+28.07.       Sommerparty im Biergarten Menterschwaige
+02.07.       Gottesdienst im Grünen mit Frühschoppen, Philippuskirche Giesing
+30.06.       Bürgerfest Weißenseepark
+20.05.       Kulturtage Giesing/Harlaching auf dem Hans-Mielich-Platz
+06.05.       Lange Nacht der Musik
+11.02.       Pfarrfasching Heilig Engel, Giesing
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
