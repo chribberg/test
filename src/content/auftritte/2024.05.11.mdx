@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: false
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2024-05-11
+date: 11.05.2024
+uhrzeit: 
+title: Lange Nacht der Musik
+description: Jazz in der Kirche, neue Station am Giesinger Berg
+location: Lutherkirche , Bergstraße 3, 81539 München (Giesing)
+keywords: Lange Nacht der Musik, München
+link: 
+linktext: 
+image:
+  src: /images/ical.png
+  alt: Lange Nacht der Musik
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
