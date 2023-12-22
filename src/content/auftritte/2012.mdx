@@ -1,0 +1,85 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2012-01-01
+date: 2012
+uhrzeit: 
+title: 10 Jahre Homburger Musiksommer 
+description: MMT erstmals im Saarland zum Abschluss der Jazzfrühschoppen-Serie 
+location: Marktplatz Homburg/ Saar
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2012_10_Jahre_Homburger_Musiksommer/P9155048.jpg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2012_10_Jahre_Homburger_Musiksommer/P9155037.jpg";
+import bild3 from "../../../public/images/blog/2012_10_Jahre_Homburger_Musiksommer/P9155044.jpg";
+import bild4 from "../../../public/images/blog/2012_10_Jahre_Homburger_Musiksommer/P9155045.jpg";
+import bild5 from "../../../public/images/blog/2012_10_Jahre_Homburger_Musiksommer/P9155053.jpg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Die Band startet zu einem Ausflug ins gastfreundliche Saarland - wo Bandleader Mike seine Wurzeln hat. Große Erfolg (s. Pressespielel, Saarbrücker Zeitung)
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild3}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild4}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild5}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
