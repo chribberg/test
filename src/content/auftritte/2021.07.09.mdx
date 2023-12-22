@@ -1,0 +1,105 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2021-07-09
+date: 09.07.2021
+uhrzeit: 
+title: Sommer in Giesing
+description: 
+location: 
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2021_07_09_Sommer_in_Giesing/IMG_6484.jpeg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6477.jpeg";
+import bild3 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6492.jpeg";
+import bild4 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6511.jpeg";
+import bild5 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6553.jpeg";
+import bild6 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6554.jpeg";
+import bild7 from "../../../public/images/blog/2021_07_09_Sommer_in_Giesing/IMG_6560.jpeg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild3}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild4}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild5}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild6}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild7}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
