@@ -1,0 +1,55 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2022-08-09
+date: 09.08.2022
+uhrzeit: 
+title: LMGU Sommerfest
+description: 
+location: 
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2022_07_09_LMGU_Sommerfest/331A6265.jpeg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2022_07_09_LMGU_Sommerfest/331A6273.jpeg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
