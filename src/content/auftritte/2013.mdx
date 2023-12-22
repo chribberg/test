@@ -1,0 +1,85 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2013-01-01
+date: 2013
+uhrzeit: 
+title: Jahreskonzert mit CD-Präsentation
+description: CD Präsentation "Tatort Big Band"
+location: Kulturhaus München Perlach
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2013_Tatort_Big_Band/MMT-COVER.jpg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2013_Tatort_Big_Band/JU1A0004-2.jpg";
+import bild3 from "../../../public/images/blog/2013_Tatort_Big_Band/JU1A0015.jpg";
+import bild4 from "../../../public/images/blog/2013_Tatort_Big_Band/JU1A0063.jpg";
+import bild5 from "../../../public/images/blog/2013_Tatort_Big_Band/_E0A3652vorschau.jpg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Am 09. November 2013 präsentierte Mike's Music Train die CD "Tatort Big Band".
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild3}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild4}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild5}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
