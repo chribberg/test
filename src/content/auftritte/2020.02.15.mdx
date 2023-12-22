@@ -1,0 +1,85 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2020-02-15
+date: 15.02.2020
+uhrzeit: 
+title: Ball der Musen im AGV-Haus
+description: Klassischer Schwarz-Weiß-Ball im großen Saal des AGV
+location: Scholastika AGV, München
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2020_02_15_Ball_der_Musen/CHIBBYmw.jpeg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2020_02_15_Ball_der_Musen/3QjCKEHL.jpeg";
+import bild3 from "../../../public/images/blog/2020_02_15_Ball_der_Musen/iWZCOA5P.jpg";
+import bild4 from "../../../public/images/blog/2020_02_15_Ball_der_Musen/LupydJtJ.jpeg.jpg";
+import bild5 from "../../../public/images/blog/2020_02_15_Ball_der_Musen/swJ-DFNs.jpeg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Kurz vor dem Corona-Lockdown darf noch ausgiebig getanzt werden! Kweiner hat geahnt, dass die Ball-Tradition seitdem im Dornröschen-Schlaf verweilt…..
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild3}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild4}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild5}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
