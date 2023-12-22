@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: false
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2024-09-08
+date: 08.09.2024
+uhrzeit: 
+title: Giesinger Bahnhof Fest
+description: Fest am Giesinger Bahnhof
+location: Giesinger Bahnhofplatz, 81539 München
+keywords: Giesinger Bahnhof Fest, München
+link: 
+linktext: 
+image:
+  src: /images/ical.png
+  alt: Giesinger Bahnhof Fest
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
