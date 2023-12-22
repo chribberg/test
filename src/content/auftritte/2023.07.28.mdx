@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2023-07-28
+date: 28.07.2023
+uhrzeit: 
+title: Sommerfest Mangfallplatz
+description: Unser jährlicher Auftritt im Rahmen des Sommerfests am Mangfallplatz
+location: Mangfallplatz, 81547 München
+keywords: Sommerfest Mangfallplatz, München
+link: 
+linktext: 
+image:
+  src: /images/ical.png
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+Der Siedler- und Eigentümerverein in Haralching hat die Tradition der Sommerfeste in dem ansonsten recht ruhigen Stadtteil wieder aufgegriffen und alle hatten einen abwechslungsreichen Abend …. Hurra, die Schule ist aus und es ist "Sommer in der Stadt".
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
