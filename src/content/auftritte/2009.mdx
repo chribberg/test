@@ -1,0 +1,42 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2009-01-01
+date: 2009
+uhrzeit: 
+title: Sport-Gala Berlin
+description: 100-Jahr-Feier OSRAM Sportvereinigung e-V.
+location: Hotel Estrel Berlin
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2009_Sport_Gala_Berlin/Berlin 182.jpg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+MMT gestaltete den musikalischen Rahmen zur großen Gala im Hotel Estrel Berlin anläßlich der 100-Jahr-Feier der OSRAM Sportvereinigung. Zum Abschluss der Sportwettkämpfe fand die Schlussfeier mit Siegerehrung, schickem Essen und Tanz statt… MMT hatte dafür u.a. passend ein Sportpaket geschnürt mit der Titelmelodie aus den Rocky-Boxerfilmen über das „Aktuelle Sportstudio“ bis zur Queen-Siegerhymne „We Are The Champions“  – alles selbtverständlich live gespielt ! Bis nach Mitternacht wurde fleißig getanzt…….
+
+---
+
+
+Adresse: <br /> {frontmatter.location}
+<br />
