@@ -1,0 +1,65 @@
+﻿---
+draft: false
+history: true
+layout: ../../layouts/BlogLayout.astro
+publishedDate: 2022-07-08
+date: 08.07.2022
+uhrzeit: 
+title: Weissenseepark
+description: 
+location: 
+keywords: 
+link: 
+linktext: 
+image:
+  src: /images/blog/2022_07_08_Weissenseepark/331A6192.jpeg
+  alt: mmt
+---
+import { Image } from "@astrojs/image/components";
+import bild2 from "../../../public/images/blog/2022_07_08_Weissenseepark/331A6170.jpeg";
+import bild3 from "../../../public/images/blog/2022_07_08_Weissenseepark/331A6215.jpeg";
+
+#  {frontmatter.title}
+
+<div id="toc">
+    <Image
+      src={frontmatter.image.src}
+      width={1000}
+      height="auto"
+      quality={95}
+      format = "webp"
+      class = "rounded-xl"
+      alt={frontmatter.image.alt}
+    />
+</div>
+
+## {frontmatter.date}
+
+
+
+---
+
+<div class="pt-8">
+<Image
+        src={bild2}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+<Image
+        src={bild3}
+        width={1500}
+        height="auto"
+        quality={100}
+        format="webp"
+        class="rounded-xl"
+        alt="{frontmatter.title}"></Image>
+        <br />
+</div>
+<br />
+
+Adresse: <br /> {frontmatter.location}
+<br />
